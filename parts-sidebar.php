@@ -46,14 +46,10 @@
 									'menu_class' => 'nav', 
 									'container_class' => 'offset-gutter',
 									'submenu' => $parent_name,
-									'depth' => 2				
+									'depth' => 1				
 								));
-
-							} ?>
-							<div class="offset-gutter" id="sidebar_header">
-								<h5 class="white">Additional <span class="grey bold"><?php echo $page_name ?></span> Information</h5>
-							</div>
-			<?php }
+							}
+			}
 			?> 
 		<!-- End Navigation for Sibling Pages -->
 		<!-- Page Specific Sidebar -->
@@ -67,7 +63,10 @@
 			<?php
 			if ( is_front_page() ) {    
 				dynamic_sidebar( 'homepage-sb' );
-							
+				
+			} elseif ( is_home() ) {    
+				dynamic_sidebar( 'archive-sb' );
+								
 			}  elseif ( is_page( 'graduate' ) || $ancestor_slug == 'graduate' ) {    
 				dynamic_sidebar( 'graduate-sb' );
 			
