@@ -110,3 +110,15 @@ li.external a::after {
 #sidebar li.external a::after {
 	color: #336699;
 }
+
+/*IE9 Queries*/
+@media (min-width: 1023px) {
+    #mobile-nav {
+    display: none !important;
+  }
+}
+@media (max-width: 1023px) {
+    #desktop-nav {
+    display: none;
+  }
+}
