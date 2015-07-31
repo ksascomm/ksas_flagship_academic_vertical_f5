@@ -35,7 +35,7 @@
   <?php include_once("parts-analytics.php"); ?>
 </head>
 <?php $theme_option = flagship_sub_get_global_options(); $color_scheme = $theme_option['flagship_sub_color_scheme']; global $blog_id; $site_id = 'site-' . $blog_id; ?>
-<body <?php body_class($color_scheme . ' ' . $site_id); ?>>
+<body <?php body_class($color_scheme . ' ' . $site_id); ?> onLoad="viewport()">
 	<header>
     <div id="mobile-nav" class="blue_bg">
   		<div class="row">
@@ -77,7 +77,7 @@
 	</div>
    <div id="desktop-nav">
 		<div class="row hide-for-print">
-      <div id="search-bar" class="small-12 large-5 large-offset-7 columns">
+      <div id="search-bar" class="small-12 medium-5 medium-offset-7 columns">
 				<div class="row">
           <div class="small-6 columns">
 					<?php $theme_option = flagship_sub_get_global_options();
