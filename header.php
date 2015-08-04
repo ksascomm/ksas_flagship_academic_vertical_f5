@@ -37,7 +37,7 @@
 <?php $theme_option = flagship_sub_get_global_options(); $color_scheme = $theme_option['flagship_sub_color_scheme']; global $blog_id; $site_id = 'site-' . $blog_id; ?>
 <body <?php body_class($color_scheme . ' ' . $site_id); ?> onLoad="viewport()">
 	<header>
-    <div id="mobile-nav" class="blue_bg">
+    <div id="mobile-nav">
   		<div class="row">
 	        <div class="small-12 columns">
 	  			<div class="mobile-logo"><a href="<?php echo network_site_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/images/ksas-logo-horizontal.png" alt="jhu logo"></a></div>
